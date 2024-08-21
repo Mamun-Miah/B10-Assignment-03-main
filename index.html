@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                primary: '#ABEF5F',
+            }
+            }
+        }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="font-manrope">
+    <header class="lg:mx-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-xl"> <img src="./assets/arrow-up-right-blue.png" alt="" height="22" width="22">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <img src="./assets/search.png" alt="" width="40" height="40" class="mx-3 max-sm:hidden" >
+                    <img src="./assets/shop.png" alt="" width="50" height="50" class="pe-3 max-sm:hidden" >
+                  <a class="btn max-sm:hidden bg-primary rounded-[32px]">Book Consult <img src="./assets/arrow-up-right-black.png" alt="" height="25" width="25"></a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <!-- <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul> -->
+                  </div>
+                </div>
+                
+              </div>
+        </nav>
+    </header>
+    <!-- hero-start -->
+    <section class="">
+        <div class="hero bg-base-200 lg:min-h-screen pb-5">
+            <div class="text-center">
+              <div class="max-w-3xl">
+                <div class="m-auto lg:max-w-lg max-sm:p-3 max-sm:max-w-xs"><img src="./assets/banner.png" alt=""></div>
+                <div>
+                    <h1 class="lg:text-5xl max-sm:text-5xl py-3 font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 max-sm:p-2 ">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a class="btn bg-primary rounded-[32px]">View Details <img src="./assets/arrow-up-right-blue.png" alt="" height="25" width="25"></a>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </section>
+    <!-- hero-start -->
+</body>
+</html>
