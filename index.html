@@ -101,8 +101,8 @@
   <section class="bg-base-200">
     <div class="py-16 grid grid-cols-2 max-sm:grid-cols-1  max-w-[80%] m-auto">
       <div class="">
-        <div class="">
-          <div class="relative right-6 bottom-4"><img src="./assets/Vector-arrow.png" alt="" class="" width="90"
+        <div class="max-sm:text-center">
+          <div class="relative right-6 bottom-4 max-sm:hidden"><img src="./assets/Vector-arrow.png" alt="" class="" width="90"
               height="35">
           </div>
           <button class=" bg-white text-center px-2 rounded-box"> <i class="fa-solid fa-arrow-right pe-1"
@@ -112,16 +112,16 @@
           <p class="text-base py-4">The barn house captivates with its blend of rustic charm and
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="flex p-2 bg-white rounded-lg mb-5 items-center">
-          <div><img src="./assets/commercial.png" alt="" class="px-3"></div>
-          <div class="px-3 py-2">
+        <div class="flex p-3 bg-white rounded-lg mb-5 lg:items-center">
+          <div><img src="./assets/commercial.png" alt="" class="lg:px-3 max-sm:pt-3"></div>
+          <div class="ps-3 py-2">
             <p class="text-base font-bold">Commercial</p>
             <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
         </div>
-        <div class="flex p-2 bg-white rounded-lg  items-center ">
-          <div><img src="./assets/residential.png" alt="" class="px-3"></div>
-          <div class="px-3 py-2">
+        <div class="flex p-3 bg-white rounded-lg  lg:items-center ">
+          <div><img src="./assets/residential.png" alt="" class="lg:px-3 max-sm:pt-3"></div>
+          <div class="ps-3 py-2">
             <p class="text-base font-bold">Residential</p>
             <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
@@ -194,7 +194,7 @@
             <p class="text-base font-bold py-2">Commercial</p>
             <p class="text-base ">The barn house captivates with its blend of rustic charm and modern. The barn house
               captivates with its blend of rustic charm and modern .</p>
-            <button class=" bg-base-100 text-center px-2 rounded-box flex ps-1 py-2 font-bold">View Details <img
+            <button class=" bg-base-100 text-center  rounded-box flex  py-2 font-bold">View Details <img
                 src="./assets/arrow-up-right-blue.png" alt="" height="22" width="22" class="mx-2"></button>
           </div>
         </div>
@@ -209,7 +209,7 @@
           <div class="ps-3">
             <p class="text-base font-bold py-2">Commercial</p>
             <p class="text-base">The barn house captivates with its blend of rustic charm and modern. </p>
-            <button class=" bg-base-100 text-center px-2 rounded-box flex ps-1 font-bold ">
+            <button class=" bg-base-100 text-center  rounded-box flex font-bold ">
               View Details
               <img src="./assets/arrow-up-right-blue.png" alt="" height="22" width="22" class="mx-2">
             </button>
@@ -222,6 +222,47 @@
     </div>
   </section>
   <!-- ##our-portfolio-ends -->
+   <section class="py-8 bg-[url('./assets/bg.jpg')] bg-cover">
+    <div class="text-center">
+      <button class=" bg-[#ABEF5F33] text-center px-2 rounded-box"> <i class="fa-solid fa-arrow-right pe-1"
+          style="color: #000000;"></i>Let’s Connect</button>
+      <h2 class="text-5xl font-bold py-4">Let’s Discuss Next Project</h2>
+      <p class="text-base pb-8 px-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+    <form action="" class="grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:p-6 max-sm:justify-center  gap-4 m-auto lg:max-w-[50%]">
+      <input type="text" placeholder="First Name*" class="input  w-full max-w-xs rounded-[32px]" />
+      <input type="text" placeholder="Last Name*" class="input  w-full max-w-xs rounded-[32px]" />
+      <input type="text" placeholder="Phone Number*" class="input  w-full max-w-xs rounded-[32px]" />
+      <input type="text" placeholder="Email Number*" class="input  w-full max-w-xs rounded-[32px]" />
+      <textarea class="textarea  col-span-2 rounded-[32px]" placeholder="Write your message here"></textarea>
+      <button class="btn btn-block bg-[#ABEF5F] rounded-[32px] col-span-2">Send Mail <img src="./assets/arrow-up-right-black.png" alt=""
+        height="25" width="25"></button>
+   </form>
+   </section>
+   <!-- ###form -->
+
+  
+  <footer class="footer footer-center bg-[#1C1C1C] text-base-content rounded p-10">
+    <div class="flex">
+    <a class="btn btn-ghost text-xl text-base-200"> <img src="./assets/arrow-up-right-blue.png" alt="" height="22"
+      width="22">Rinterio</a>
+    </div>
+    <div class="text-center">
+      <p class="text-base-200 px-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+    <nav class="grid grid-flow-col lg:gap-16 text-base-300 max-sm:flex max-sm:flex-col">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Service</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <div class="flex max-w-[90%]">
+    <a class="btn btn-block bg-primary rounded-[32px] px-16">Book Consult <img
+      src="./assets/arrow-up-right-black.png" alt="" height="25" width="25"></a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
