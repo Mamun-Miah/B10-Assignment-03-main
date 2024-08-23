@@ -7,10 +7,16 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+        manrope: ['Manrope', 'sans-serif'],
+      },
           colors: {
             primary: '#ABEF5F',
             bgprimary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)'
@@ -52,10 +58,7 @@
               src="./assets/arrow-up-right-black.png" alt="" height="25" width="25"></a>
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+              <img src="./assets/menu.png" alt="" class="h-10 w-10">
             </div>
             <!-- <ul
                       tabindex="0"
@@ -78,7 +81,7 @@
   </header>
   <!-- hero-start -->
   <section class="">
-    <div class="hero bg-base-100 lg:min-h-screen pb-5">
+    <div class="hero bg-base-100 lg:min-h-screen pb-5 max-sm:p-4">
       <div class="text-center">
         <div class="max-w-3xl">
           <div class="m-auto lg:max-w-lg max-sm:p-3 max-sm:max-w-xs"><img src="./assets/banner.png" alt=""></div>
@@ -89,14 +92,14 @@
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
               wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
-            <a class="btn bg-[#ABEF5F80] rounded-[32px]">View Details <img src="./assets/arrow-up-right-blue.png" alt=""
+            <a class="btn bg-[#ABEF5F80] rounded-[32px] my-3 max-sm:px-24">View Details <img src="./assets/arrow-up-right-blue.png" alt=""
                 height="25" width="25"></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- hero-start -->
+  <!-- hero-ends -->
   <!-- About-us -->
   <section class="bg-base-200">
     <div class="py-16 grid grid-cols-2 max-sm:grid-cols-1  max-w-[80%] m-auto">
@@ -112,23 +115,23 @@
           <p class="text-base py-4">The barn house captivates with its blend of rustic charm and
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="flex p-3 bg-white rounded-lg mb-5 lg:items-center">
+        <div class="flex p-2 max-sm:p-3 bg-white rounded-lg mb-5 lg:items-center">
           <div><img src="./assets/commercial.png" alt="" class="lg:px-3 max-sm:pt-3"></div>
-          <div class="ps-3 py-2">
+          <div class="ps-3 py-1">
             <p class="text-base font-bold">Commercial</p>
             <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
         </div>
-        <div class="flex p-3 bg-white rounded-lg  lg:items-center ">
+        <div class="flex p-2 max-sm:p-3  bg-white rounded-lg  lg:items-center ">
           <div><img src="./assets/residential.png" alt="" class="lg:px-3 max-sm:pt-3"></div>
-          <div class="ps-3 py-2">
+          <div class="ps-3 py-1">
             <p class="text-base font-bold">Residential</p>
             <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
         </div>
       </div>
-      <div class="flex justify-end py-4">
-        <img src=" ./assets/Rectangle.png" alt="" width="400" height="auto">
+      <div class="flex justify-end items-center py-4">
+        <img src=" ./assets/Rectangle.png" alt="" width="500" height="auto" class="lg:p-8">
       </div>
     </div>
   </section>
@@ -229,12 +232,12 @@
       <h2 class="text-5xl font-bold py-4">Let’s Discuss Next Project</h2>
       <p class="text-base pb-8 px-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
     </div>
-    <form action="" class="grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:p-6 max-sm:justify-center  gap-4 m-auto lg:max-w-[50%]">
+    <form action="" class="grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:max-w-[80%] max-sm:justify-center  gap-4 m-auto lg:max-w-[50%]">
       <input type="text" placeholder="First Name*" class="input  w-full max-w-xs rounded-[32px]" />
       <input type="text" placeholder="Last Name*" class="input  w-full max-w-xs rounded-[32px]" />
       <input type="text" placeholder="Phone Number*" class="input  w-full max-w-xs rounded-[32px]" />
       <input type="text" placeholder="Email Number*" class="input  w-full max-w-xs rounded-[32px]" />
-      <textarea class="textarea  col-span-2 rounded-[32px]" placeholder="Write your message here"></textarea>
+      <textarea class="textarea  col-span-2 rounded-[32px] max-sm:max-w-xs" placeholder="Write your message here"></textarea>
       <button class="btn btn-block bg-[#ABEF5F] rounded-[32px] col-span-2">Send Mail <img src="./assets/arrow-up-right-black.png" alt=""
         height="25" width="25"></button>
    </form>
